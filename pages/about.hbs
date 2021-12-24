@@ -1,0 +1,36 @@
+---
+{
+    "urlFormat": "about.html"
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <meta name="description" content="About {{global.name}}">
+    {{>head}}
+    {{!-- <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> --}}
+    <!--Replace with your tailwind.css once created-->
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/fonts/openSans.css" />
+    <link rel="stylesheet" href="/fonts/Oswald.css" />
+</head>
+    <div class="container mx-auto px-4">
+        <body class="bg-white text-gray-600 font-OpenSans leading-normal text-base tracking-normal">
+            
+        {{>navbar}}
+
+        <section class="bg-white py-8">
+            <div class="container py-8 px-6 mx-auto">
+                <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#">About</a>
+                <p class="mt-8 mb-8 text-xl">{{global.name}} was founded in 2021, and is headquartered in New York, NY.</p>
+            </div>
+        </section>
+
+        </body> 
+    </div>
+</html>
